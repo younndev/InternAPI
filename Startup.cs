@@ -31,6 +31,9 @@ namespace InternAPI
 
             //Adding scoped service (IRepo, Repo)
             services.AddScoped<IManagerRepository, ManagerRepository>();
+            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IInternshipRepository, InternshipRepository>();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

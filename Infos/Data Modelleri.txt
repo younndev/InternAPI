@@ -1,0 +1,28 @@
+Şirket:
+	Id
+	Ad
+	Sektör
+	Adres
+	Telefon
+	Mail
+	Site
+
+Öğrenci:
+	Id
+	Ad
+	Soyad
+	Fakülte
+	Bölüm
+	Adres
+	Telefon
+	Mail
+	Şifre
+	Şirket ID
+	Staj Departmanı
+	Danışman Öğretmen
+	Sigorta No
+
+Yönetici:
+	Id
+	Mail
+	Şifre

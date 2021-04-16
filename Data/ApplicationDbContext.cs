@@ -10,6 +10,8 @@ namespace InternAPI.Data
 
         }
         public DbSet<Manager> Managers { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Student> Student { get; set; }
 
     }
 }
