@@ -33,6 +33,7 @@ namespace InternAPI
             services.AddScoped<IManagerRepository, ManagerRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<IInternshipRepository, InternshipRepository>();
+            services.AddScoped<ICompanyRepository, CompanyRepository>();
 
         }
 

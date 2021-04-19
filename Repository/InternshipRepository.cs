@@ -17,12 +17,12 @@ namespace InternAPI.Repository
 
         public ICollection<Student> GetByFaculty(string facultyName)
         {
-            return _db.Student.Include(c => c.Company).Where(x => x.Faculty.ToLower() == facultyName.ToLower()).ToList();
+            return _db.Student.Include(c => c.Company).Where(x => EF.Functions.Contains(x.Faculty, facultyName)).ToList();
         }
 
         public ICollection<Student> GetByAdvisor(string advisorName)
         {
-            return _db.Student.Include(c => c.Company).Where(x => x.Advisor.ToLower() == advisorName.ToLower()).ToList();
+            return _db.Student.Include(c => c.Company).Where(x => EF.Functions.Contains(x.Advisor, advisorName)).ToList();
         }
 
         public ICollection<Student> GetByCompanyId(int id)
