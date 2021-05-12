@@ -11,5 +11,7 @@ namespace InternAPI.Models
         public string Mail { get; set; }
         [Required]
         public string Password { get; set; }
+        [NotMapped]
+        public string Token { get; set; }
     }
 }

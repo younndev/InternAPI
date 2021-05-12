@@ -34,7 +34,9 @@ namespace InternAPI.Models
         public string Advisor { get; set; }
 
         public int InsuranceNo { get; set; }
-
+        
+        [NotMapped]
+        public string Token { get; set; }
 
     }
 }

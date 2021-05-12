@@ -1,0 +1,8 @@
+namespace InternAPI
+{
+    public class AppSettings
+    {
+        public string SecretKey { get; set; }
+
+    }
+}
